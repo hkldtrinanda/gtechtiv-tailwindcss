@@ -1,0 +1,121 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../font/ArimoSemiBold.ttf);
+}
+
+.font1 {
+  font-family: myFirstFont;
+}
+
+@font-face {
+  font-family: mysecondFont;
+  src: url(../font/Quantum.otf);
+}
+
+.font2 {
+  font-family: mysecondFont;
+}
+
+@font-face {
+  font-family: mythirdFont;
+  src: url(../font/MavenProMedium.ttf);
+}
+
+.font3 {
+  font-family: mythirdFont;
+}
+
+@font-face {
+  font-family: myfourthFont;
+  src: url(font/Montserrat-Bold.otf);
+}
+
+.font4 {
+  font-family: myfourthFont;
+}
+
+.font5 {
+  font-family: myfifthFont;
+}
+
+@font-face {
+  font-family: myfifthFont;
+  src: url(../font/Montserrat-SemiBoldItalic.ttf);
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #34d399;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.pattern {
+  background-image: url("../img/heroes-01.webp");
+  width: auto;
+  height: 110%;
+  position: sticky;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 640px) {
+  .pattern {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("..img/bg1.webp");
+  }
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+.carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+#carousel-1:checked
+  ~ .control-1
+  ~ .carousel-indicators
+  li:nth-child(1)
+  .carousel-bullet,
+#carousel-2:checked
+  ~ .control-2
+  ~ .carousel-indicators
+  li:nth-child(2)
+  .carousel-bullet,
+#carousel-3:checked
+  ~ .control-3
+  ~ .carousel-indicators
+  li:nth-child(3)
+  .carousel-bullet {
+  color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+* {
+  scroll-behavior: smooth;
+}

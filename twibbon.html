@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--  -->
+  <link rel="stylesheet" href="style/tailwind.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style/build.css">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="dist/aos.css" />
+  <title>GAMETECH POLIMEDIA</title>
+
+
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <header>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <div class="w-full text-yellow-400 bg-gray-700 fixed z-50 font1">
+      <div x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a href="#"
+            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+            <img class="w-auto h-11" src="img/header.webp" alt="" /></a>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold text-yellow-400 rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="index.html">HOME</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#Profil">PROFIL</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#Video">VIDEO</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="gallery.html">GALLERY</a>
+      </div>
+    </div>
+    </nav>
+    </div>
+    </div>
+    </div>
+  </header>
+
+  <!-- HEADER -->
+
+  <section class="bg-gray-900 h-full flex justify-center items-center p-25 pattern">
+    <div class="container mx-auto flex flex-col items-center px-4 py-16 pb-18 text-center md:py-32 md:px-10">
+      <h1 class="text-4xl sm:text-5xl xl:max-w-3xl font2 text-white">HIMPUNAN MAHASISWA</h1>
+      <h2 class="text-2xl sm:text-4xl xl:max-w-xl font2 text-white">GAME TECHNOLOGY</h2>
+      <p class="mt-6 mb-8 text-md sm:mb-12 xl:max-w-3xl font4 text-white">Website Resmi Himpunan Mahasiswa Game Technology <br>Politeknik Negeri Media Kreatif Jakarta</p>
+      <!-- <div class="flex flex-wrap justify-center">
+        <button class="px-8 py-3 m-2 text-lg border rounded hover:bg-gray-900 hover:text-yellow-400 font4">Gallery</button>
+      </div> -->
+      <span
+        class="animate__animated animated bounce animate__bounce absolute w-full bottom-10 flex items-center justify-center">
+        <a href="#Profil">
+          <img src="img/arrow.png" alt="" class="h-5">
+        </a>
+      </span>
+    </div>
+  </section>
+  
+  <!-- Content -->
+  <div class="bg-gray-900" id="Profil">
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
+      <div class="grid gap-5 row-gap-8 lg:grid-cols-2">
+        <div class="flex flex-col justify-center">
+          <div class="max-w-xl mb-6">
+            <h2
+              class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-yellow-400 sm:text-4xl sm:leading-none font2">
+              Twibbon
+            </h2>
+            <p class="text-base text-yellow-400 md:text-lg">
+                Unduh Twibbon Dibawah Ini
+            </p>
+            <br>
+            <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+				<a href="twibbon/Twibbonize.png" download class="px-8 py-3 text-lg font-semibold border-yellow-400 hover:border-white border rounded text-white hover:text-yellow-400 hover:bg-white">Twibbon</a>
+                <a href="twibbon/Ketentuan_Foto_Twibbon.pdf" download class="px-8 py-3 text-lg font-semibold border-yellow-400 hover:border-white border rounded text-white hover:text-yellow-400 hover:bg-white">Pedoman</a>
+			</div>
+          </div>
+        </div>
+        <div>
+          <img class="object-cover w-full h-56 rounded shadow-lg sm:h-96 animate__animated animate__bounceInRight"
+            src="img/logo_twibbonize.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- footer -->
+    <section class="w-full h-auto">
+        <img src="img/footer.svg">
+      </section>
+      <footer class="p-6 bg-gray-700 text-red-50 -my-1 ">
+        <div class=" mx-auto">
+          <div class="container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4">
+            <div class="flex flex-col space-y-4">
+              <h2 class="font-medium">Partnership</h2>
+              <div class="flex flex-col space-y-2 text-sm text-coolGray-400">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <h2 class="font-medium">Supported</h2>
+              <div class="flex flex-col space-y-2 text-sm text-coolGray-400">
+                <a href="#">Polimedia Jakarta</a>
+                <a href="#">MPM Polimedia </a>
+                <a href="#">BEM Polimedia </a>
+    
+              </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <h2 class="font-medium">Media Partners</h2>
+              <div class="flex flex-col space-y-2 text-sm text-coolGray-400">
+                <a href="#">Sahabat HIMA </a>
+                <a href="#">Majalah Ketik </a>
+                <a href="#">Radio Polimedia</a>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <h2 class="font-medium">Sponsorship</h2>
+              <div class="flex flex-col space-y-2 text-sm text-coolGray-400">
+                <a href="#">Need Sponsorship</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center px-6 pt-12 text-sm">
+          <span class="text-coolGray-400">© Copyright 2021. All Rights Reserved. - Website by hkldtrinanda</span>
+        </div>
+      </footer>
+</body>
+
+</html>

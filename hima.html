@@ -1,0 +1,684 @@
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--  -->
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/build.css">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="dist/aos.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <title>GAMETECH POLIMEDIA</title>
+
+
+</head>
+
+<body>
+  <!-- BOT TO TOP -->
+  <button class="hidden" onclick="window.scrollTo(0,0)" id="tombolup" title="Go to top">
+    <div class="w-14 sm:w-24 bottom-14 right-8 z-9999 cursor-pointer fixed hover:w-32">
+      <img src="img/gamepad.svg">
+    </div>
+  </button>
+
+  <!-- Nav -->
+  <header>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <div class="w-full text-yellow-400 bg-transparent absolute z-50 font1">
+      <div x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a href="#"
+            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+            <img class="w-auto h-11" src="img/header.webp" alt="" /></a>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold text-yellow-400 rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="index.html">HOME</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#Profil">PROFIL</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#struktur">STRUKTUR</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#kontak">KONTAK</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="gallery.html">KARYA</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER -->
+  <section class="bg-gray-900 h-full flex justify-center items-center p-25 pattern">
+    <div class="container mx-auto flex flex-col items-center px-4 py-16 pb-18 text-center md:py-32 md:px-10">
+      <h1 class="text-4xl sm:text-5xl xl:max-w-3xl font5 text-white">HIMPUNAN MAHASISWA</h1>
+      <h2 class="text-2xl sm:text-4xl xl:max-w-xl font5 text-white">GAME TECHNOLOGY</h2>
+      <p class="mt-6 mb-8 text-md sm:mb-12 xl:max-w-3xl font5 text-white">POLITEKNIK NEGERI MEDIA KREATIF</p>
+      <!-- <div class="flex flex-wrap justify-center">
+        <button class="px-8 py-3 m-2 text-lg border rounded hover:bg-gray-900 hover:text-yellow-400 font4">Gallery</button>
+      </div> -->
+      <span
+        class="animate__animated animated bounce animate__bounce absolute w-full bottom-32 flex items-center justify-center">
+        <a href="#Profil">
+          <img src="img/arrow.png" alt="" class="h-5">
+        </a>
+      </span>
+    </div>
+  </section>
+  <div class="bg-gray-900 py-14" id=""></div>
+
+  <!-- Content -->
+  <div class="bg-gray-900 " id="Profil">
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
+      <div class="grid gap-5 row-gap-8 lg:grid-cols-2">
+        <div class="flex flex-col justify-center aos-item__inner">
+          <div class="max-w-xl mb-6 aos-item" data-aos="fade-up">
+            <h2
+              class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-yellow-400 sm:text-4xl sm:leading-none font5">
+              PROFIL
+            </h2>
+            <p class="text-base text-yellow-400 md:text-lg text-justify">
+              Himpunan mahasiswa Game Technology Politeknik Negeri Media Kreatif Jakarta yang disingkat menjadi HIMA
+              G.TECHTIV.
+              Organisasi ini dibentuk dan didirikan pada Jum’at, 4 April 2019 M / 29 Rajab 1440 H di Srengseng Sawah,
+              Jakarta Selatan,
+              dan berkedudukan di Politeknik Negeri Media Kreatif Jakarta.
+            </p>
+          </div>
+        </div>
+        <div class="aos-item__inner">
+          <img class="object-cover w-full h-56 rounded sm:h-96 aos-item" data-aos="fade-up" src="img/logo_1.png"
+            alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-900" id=""></div>
+
+
+  <!-- Anggota -->
+
+  <section class="py-6 dark:bg-coolGray-800 dark:text-coolGray-100" id="struktur">
+    <div class="container p-4 mx-auto space-y-16 sm:p-10 aos-item__inner">
+      <div class="space-y-4" data-aos="fade-in">
+        <h3 class="text-2xl font-bold leading-none sm:text-5xl font5">STRUKTUR ORGANISASI</h3>
+        <p class="max-w-2xl ">Struktur Kepengurusan Himpunan Mahasiswa Game Technology Tahun 2021/2022</p>
+      </div>
+      <div class="grid w-full grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 ">
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/fajri.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Fajri Nurwahid A</h4>
+            <p class="text-sm ">Ketua HIMA GTechtiv</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/shahal.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Ahmad Shahal</h4>
+            <p class="text-sm ">Wakil Ketua HIMA GTechtiv</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/fitry.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Fitry Zelilan</h4>
+            <p class="text-sm ">Sekretaris HIMA GTechtiv</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/balqis.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Putri Balqis A</h4>
+            <p class="text-sm ">Wakil Sekretaris HIMA GTechtiv</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm"
+            src="img/kabinet/novrielfa.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Novrielfa</h4>
+            <p class="text-sm ">Bendahara HIMA GTechtiv</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/desti.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Desti Fitriana</h4>
+            <p class="text-sm ">Wakil Bendahara HIMA GTechtiv</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/anam.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Syahrul Anam</h4>
+            <p class="text-sm ">Kepala Divisi HUMAS</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/jasmine.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Jasmine Ardinda</h4>
+            <p class="text-sm ">Anggota Divisi Humas</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/nabil.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Ainnun Nabil</h4>
+            <p class="text-sm ">Anggota Divisi Humas</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/saban.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">M.Nursyaban</h4>
+            <p class="text-sm ">Anggota Divisi Humas</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/zaki.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">M.Zaki Walid</h4>
+            <p class="text-sm ">Anggota Divisi Humas</p>
+
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/agoy.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Prayoga ElRahman</h4>
+            <p class="text-sm ">Kepala Divisi Publikasi</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/hdt.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Haikal Danung Trinanda</h4>
+            <p class="text-sm ">Anggota Divisi Publikasi</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/fiki.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Fiki Abdul Rachman</h4>
+            <p class="text-sm ">Anggota Divisi Publikasi</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/siska.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Fransisca Aprillia</h4>
+            <p class="text-sm ">Anggota Divisi Publikasi</p>
+
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/bunga.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Bunga Azalia</h4>
+            <p class="text-sm ">Anggota Divisi Publikasi</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/damdit.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Adam Aditya S</h4>
+            <p class="text-sm ">Kepala Divisi Akademik</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/niko.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Nicko Esha</h4>
+            <p class="text-sm ">Anggota Divisi Akademik</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/hilmi.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Hilmi Ananta H</h4>
+            <p class="text-sm ">Anggota Divisi Akademik</p>
+
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/kw.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">M.Haikal Bintang</h4>
+            <p class="text-sm ">Anggota Divisi Akademik</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/alam.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Sultan Alam</h4>
+            <p class="text-sm ">Kepala Divisi Dana Usaha</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/shidqi.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Rayhan Shidqi N.</h4>
+            <p class="text-sm ">Anggota Divisi Dana Usaha</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/fath.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Fathiah Izzatie Rahmafillah</h4>
+            <p class="text-sm ">Anggota Divisi Dana Usaha</p>
+
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/steve.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Steven Julian</h4>
+            <p class="text-sm ">Anggota Divisi Dana Usaha</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/dapong.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">M. Daffa Yudistrian</h4>
+            <p class="text-sm ">Kepala Divisi Risvasi</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm"
+            src="img/kabinet/dispongsi.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Nadhifah Aafiyah.</h4>
+            <p class="text-sm ">Anggota Divisi Risvasi</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/sultan.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Sultan Rafie Hidayat</h4>
+            <p class="text-sm ">Anggota Divisi Risvasi</p>
+
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/bagus.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Bagus Hendrawan</h4>
+            <p class="text-sm ">Anggota Divisi Risvasi</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/tay.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Putri Setia Ningsih</h4>
+            <p class="text-sm ">Kepala Divisi Minat Bakat</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/fif.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Raditya Afif</h4>
+            <p class="text-sm ">Anggota Divisi Minat Bakat</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/mi.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Azmi Munif Hartono</h4>
+            <p class="text-sm ">Anggota Divisi Minat Bakat</p>
+
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/dhil.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Fadhil Athallah Rafi</h4>
+            <p class="text-sm ">Anggota Divisi Minat Bakat</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/val.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Syah Rival Munastan</h4>
+            <p class="text-sm ">Anggota Divisi Minat Bakat</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/gen.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Rifqi Azhar Al Ghani</h4>
+            <p class="text-sm ">Kepala Divisi Pengabdian Masyarakat</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/fly.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Mohammad Rafli Banser</h4>
+            <p class="text-sm ">Anggota Divisi Pengabdian Masyarakat</p>
+          </div>
+        </div>
+        <!---->
+        <div class="space-y-4" data-aos="fade-up">
+          <img alt="" class="object-cover w-auto h-56 mx-auto mb-4 bg-center rounded-sm" src="img/kabinet/adrian.webp">
+          <div class="flex flex-col items-center">
+            <h4 class="text-xl font-semibold">Adrian Ramzy Baskara</h4>
+            <p class="text-sm ">Anggota Divisi Pengabdian Masyarakat</p>
+
+          </div>
+        </div>
+        <!---->
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos -->
+
+  <section class="px-4 py-24 mx-auto max-w-7xl aos-item__inner">
+    <h1 class="mb-12 text-sm font-bold tracking-wide text-center text-gray-800 uppercase" data-aos="fade-in">DIVISI
+      HIMPUNAN MAHASISWA GAME TECHNOLOGY</h1>
+    <div class="grid grid-cols-2 gap-10 text-center lg:grid-cols-7">
+      <div class="flex items-center justify-center" data-aos="fade-right">
+        <img src="img/logo/ak.webp" alt="Akademik" class="block object-contain h-28" />
+      </div>
+      <div class="flex items-center justify-center" data-aos="fade-right">
+        <img src="img/logo/hm.webp" alt="Humas" class="block object-contain h-28" />
+      </div>
+      <div class="flex items-center justify-center" data-aos="fade-right">
+        <img src="img/logo/pbl.webp" alt="Publikasi" class="block object-contain h-28" />
+      </div>
+      <div class="flex items-center justify-center" data-aos="fade-in">
+        <img src="img/logo/pm.webp" alt="Pengmas" class="block object-contain h-28" />
+      </div>
+      <div class="flex items-center justify-center" data-aos="fade-left">
+        <img src="img/logo/ri.webp" alt="RisetInovasi" class="block object-contain h-28" />
+      </div>
+      <div class="flex items-center justify-center" data-aos="fade-left">
+        <img src="img/logo/du.webp" alt="DanaUsaha" class="block object-contain h-28" />
+      </div>
+      <div class="flex items-center justify-center" data-aos="fade-left">
+        <img src="img/logo/mb.webp" alt="MinatBakat" class="block object-contain h-28" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Content -->
+
+  <section class="p-4 lg:p-8 bg-gray-900 text-gray-900">
+    <div class="container mx-auto space-y-12">
+      <div class="flex flex-col overflow-hidden rounded-md shadow-xl lg:flex-row bg-white">
+        <div class="flex items-center justify-center flex-1 ">
+          <img src="img/icon/file.svg" alt="" class="p-8 h-60 ">
+        </div>
+        <div class="flex flex-col justify-center flex-1 px-6 py-12 ">
+          <span class="text-xs uppercase ">AD/ART</span>
+          <h2 class="text-3xl font-bold">Himpunan Mahasiswa Game Technology</h2>
+          <span class="font5"> Kabinet Mabar</span>
+          <p class="my-6 "></p>
+          <div class="flex ">
+            <button
+              class="bg-white border-2 border-gray-900 hover:bg-gray-900 rounded-lg h-12 w-32 hover:text-white text-gray-900">
+              <h1 class="font-extrabold">Lihat</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse bg-white">
+        <div class="flex items-center justify-center flex-1 ">
+          <img src="img/logo_kabinet.png" alt="" class="p-8 h-60 ">
+        </div>
+        <div class="flex flex-col justify-center flex-1 px-6 py-12 ">
+          <span class="text-xs uppercase ">LOGO KABINET</span>
+          <h2 class="text-3xl font-bold">Himpunan Mahasiswa Game Technology</h2>
+          <span class="font5"> Kabinet Mabar</span>
+          <p class="my-6 "></p>
+          <div class="flex ">
+            <button
+              class="bg-white border-2 border-gray-900 hover:bg-gray-900 rounded-lg h-12 w-32 hover:text-white text-gray-900">
+              <h1 class="font-extrabold">Lihat</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+      <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+        <img src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" class="object-cover w-full h-64" alt="" />
+        <div class="p-5 border border-t-0">
+          <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+            <a href="/" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">traveling</a>
+            <span class="text-gray-600">— 28 Dec 2020</span>
+          </p>
+          <a href="/" aria-label="Category" title="Visit the East" class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">Visit the East</a>
+          <p class="mb-2 text-gray-700">
+            Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
+          </p>
+          <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+        </div>
+      </div>
+      <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+        <img src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-64" alt="" />
+        <div class="p-5 border border-t-0">
+          <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+            <a href="/" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">traveling</a>
+            <span class="text-gray-600">— 28 Dec 2020</span>
+          </p>
+          <a href="/" aria-label="Category" title="Simple is better" class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">Simple is better</a>
+          <p class="mb-2 text-gray-700">
+            Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
+          </p>
+          <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+        </div>
+      </div>
+      <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+        <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" class="object-cover w-full h-64" alt="" />
+        <div class="p-5 border border-t-0">
+          <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
+            <a href="/" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">traveling</a>
+            <span class="text-gray-600">— 28 Dec 2020</span>
+          </p>
+          <a href="/" aria-label="Category" title="Film It!" class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">Film It!</a>
+          <p class="mb-2 text-gray-700">
+            Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
+          </p>
+          <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Maps -->
+
+  <section class="p-6" id="kontak">
+    <div class="container gap-6 mx-auto text-center lg:grid-cols-2 xl:grid-cols-5 shadow-xl border-2 rounded-lg my-16">
+      <div class="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 ">
+        <h1 class="text-5xl font-extrabold ">Kontak Kami</h1>
+        <p class="my-8">
+          <span class="font-medium">Kalian Dapat menghubungi kamu melalui</span>
+        </p>
+      </div>
+      <div class="flex w-lg justify-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3630531808485!2d106.82420261476982!3d-6.347012545406943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec2e63dcf7b7%3A0x39a93c506b0174b8!2sPolimedia%20Kreatif!5e0!3m2!1sid!2sid!4v1631522108468!5m2!1sid!2sid"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          class="object-cover w-full rounded-md xl:col-span-3 "></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!--  -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#111827" fill-opacity="1"
+      d="M0,96L120,112C240,128,480,160,720,165.3C960,171,1200,149,1320,138.7L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+    </path>
+  </svg>
+
+  <footer class="bg-gray-900 ">
+    <div class="container px-6 py-4 mx-auto">
+      <div class="lg:flex">
+        <div class="w-full -mx-6 lg:w-2/5">
+          <div class="px-6">
+            <div>
+              <a href="#" class="text-xl font-bold text-white  font5">Game Technology</a><br>
+              <a href="#" class="text-sm font-bold text-white  font5">Politeknik Negeri Media kreatif</a>
+            </div>
+
+            <p class="max-w-md mt-2 text-white dark:text-gray-400">Jl. Srengseng Sawah Raya No.17, RT.8/RW.3, Srengseng
+              Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630.</p>
+
+            <div class="flex mt-4 -mx-2">
+              <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
+                aria-label="Linkden">
+                <img src="img/icon/instagram.png" alt="" class="block object-contain h-4">
+              </a>
+
+              <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
+                aria-label="Facebook">
+                <img src="img/icon/youtube.png" alt="" class="block object-contain h-4">
+              </a>
+
+              <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
+                aria-label="Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 lg:mt-0 lg:flex-1">
+          <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 text-white">
+            <div>
+              <h3 class="uppercase ">Supported</h3>
+              <a href="#" class="block mt-2 text-sm  hover:underline">Polimedia Jakarta</a>
+              <a href="#" class="block mt-2 text-sm  hover:underline">MPM Polimedia JKT</a>
+              <a href="#" class="block mt-2 text-sm  hover:underline">BEM Polimedia JKT</a>
+
+            </div>
+
+            <div>
+              <h3 class=" uppercase ">Media Partners</h3>
+              <a href="#" class="block mt-2 text-sm  hover:underline">Sahabat HIMA Polimedia JKT</a>
+              <a href="#" class="block mt-2 text-sm  hover:underline">Majalah Ketik</a>
+              <a href="#" class="block mt-2 text-sm  hover:underline">Polimedia TV</a>
+              <a href="#" class="block mt-2 text-sm  hover:underline">Radio Polimedia</a>
+            </div>
+
+            <div>
+              <h3 class=" uppercase ">Sponsorship</h3>
+              <a href="#" class="block mt-2 text-sm  hover:underline"></a>
+              <a href="#" class="block mt-2 text-sm  hover:underline"></a>
+              <a href="#" class="block mt-2 text-sm  hover:underline"></a>
+            </div>
+
+            <div>
+              <h3 class=" uppercase dark:text-white">Contact</h3>
+              <span class="block mt-2 text-sm  hover:underline">gametechpolimedia@gmail.com</span>
+              <!-- <span class="block mt-2 text-xs  hover:underline">gametechpolimedia@gmail.com</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
+
+      <div>
+        <p class="text-center text-white">© GTechtiv 2021 - All rights reserved - Designed by hkldtrinanda</p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+  <script src="../dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
+  <script>
+    function scrollToAnchor(aid) {
+      var aTag = $("a[name='" + aid + "']");
+      $('html,body').animate({ scrollTop: aTag.offset().top }, 'slow');
+    }
+
+    scrollToAnchor('id3');
+  </script>
+
+  <script>
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        document.getElementById("tombolup")?.classList.remove('hidden');
+      } else {
+        document.getElementById("tombolup")?.classList.add('hidden');
+      }
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+  </script>
+</body>
+
+</html>

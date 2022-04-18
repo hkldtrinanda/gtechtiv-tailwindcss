@@ -1,0 +1,646 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  -->
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/build.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <title>GAMETECH POLIMEDIA</title>
+
+
+</head>
+
+<body>
+
+    <!-- Nav -->
+  <!-- Nav -->
+  <header>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <div class="w-full text-yellow-400 bg-transparent absolute z-50 font1">
+      <div x-data="{ open: false }"
+        class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a href="#"
+            class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+            <img class="w-auto h-11" src="img/header.webp" alt="" /></a>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+              <path x-show="!open" fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}"
+          class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold text-yellow-400 rounded-lg  md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="index.html">HOME</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="index.html">PROFIL</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#Video">VIDEO</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="#footer">KONTAK</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg  md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+            href="gallery.html">KARYA</a>
+      </div>
+    </div>
+    </nav>
+    </div>
+  </header>
+
+    <!-- Gallery -->
+    <section class="py-6 sm:py-12 dark:bg-coolGray-800  lg:py-24 bg-gray-900 text-yellow-400">
+        <div class="container p-6 mx-auto space-y-8 py-16   ">
+            <div class="space-y-2 text-center">
+                <h2 class="text-5xl font-bold font2 animate__fadeInDown animate__animated">GALLERY</h2>
+                <p class="font-serif text-sm dark:text-coolGray-400 font1">a collection of works from
+                    Game Technology Students</p>
+            </div>
+            <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/batgirl2.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Batgirl</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Salsabila Nurulain - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Unity Engine
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/naraetos.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Naraetos</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Salsabila Nurulain - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Unity Engine
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/tabibito.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline">Tabibito
+                            Traveler Genshin Impact Fanart</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">M.Said Hafidz Hamzah - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Paint Tool SAI
+                            </div>
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Photoshop
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/fanart.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Fanart
+                            Pixel</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Arnesta Ilham - Ang.2</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Photoshop
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!---->
+            </div>
+
+            <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/whitecar.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">white
+                            car</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Azmi Munif Hartono - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/k5bog.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">K5
+                            NT11 Train Bogie</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Haikal Danung Trinanda - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/bridge.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Red
+                            Bridge</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Haikal Danung Trinanda - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/oldwell.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Old
+                            Well</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Atthiya Agustian - Ang.2</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!---->
+            </div>
+
+            <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/modelP.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Model P</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">M. Fauzan - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/hanumachine.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Hanumachine</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">M.Fauzan - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/goldchariot.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Gold Chariot</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">M.Fauzan - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/Dino.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Dino</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Ilham Maulana - Ang.1</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!---->
+            </div>
+
+            <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/Dilucgi.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Diluc Genshin Impact</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Laila Minami - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/kurotat.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Kuroo Tetsurou</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Laila Minami - Ang.2</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/ChessPieces.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Chess Pieces</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Dimas Sukma P - Ang.1</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/guts.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">GUTS</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">M.Fauzan - Ang.3</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Blender
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!---->
+            </div>
+    </section>
+
+    <!-- Video -->
+    <section class="py-6 sm:py-12 dark:bg-coolGray-800  lg:py-24 bg-gray-900 text-yellow-400" id="Video">
+        <div class="container p-6 mx-auto space-y-8">
+            <div class="space-y-2 text-center">
+                <h2 class="text-5xl font-bold font2 ">VIDEO</h2>
+                <p class="font-serif text-sm dark:text-coolGray-400 font1">a collection of works from
+                    Game Technology Students<BR>&ensp;</p>
+
+                <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+                    <article class="flex flex-col d">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <!-- <video controls>
+                                <source alt="" class="object-cover w-full h-52" src="https://www.youtube.com/watch?v=F8FHZ_py1LM"
+                                    type="video/mp4">
+                            </video> -->
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe src="https://www.youtube.com/embed/Ub4LeGrCc94">
+                                </iframe>
+                            </div>
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Dynamic Hair</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Dimas Sukma Pradana - Ang.1</h3>
+                            <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                                <div
+                                    class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                    Blender
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col d">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <!-- <video controls>
+                                <source alt="" class="object-cover w-full h-52" src="https://www.youtube.com/watch?v=F8FHZ_py1LM"
+                                    type="video/mp4">
+                            </video> -->
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe src="https://www.youtube.com/embed/kijCaaePULE">
+                                </iframe>
+                            </div>
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Among Us</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Dimas Sukma Pradana - Ang.1
+                            </h3>
+                            <div class="flex flex-wrap justify-start text-xs">
+                                <div
+                                    class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                    Blender
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col d">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <!-- <video controls>
+                                <source alt="" class="object-cover w-full h-52" src="https://www.youtube.com/watch?v=F8FHZ_py1LM"
+                                    type="video/mp4">
+                            </video> -->
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe src="https://www.youtube.com/embed/oZZdJHTB_6I">
+                                </iframe>
+                            </div>
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a href="#" class="text-xs tracking-wider uppercase hover:underline">Nobita`s Room</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Dimas Sukma Pradana - Ang.1</h3>
+                            <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                                <div
+                                    class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                    Blender
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="flex flex-col d">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                            <!-- <video controls>
+                                <source alt="" class="object-cover w-full h-52" src="https://www.youtube.com/watch?v=F8FHZ_py1LM"
+                                    type="video/mp4">
+                            </video> -->
+                            <div class="aspect-w-16 aspect-h-9">
+                                <iframe src="https://www.youtube.com/embed/dSSD8hIkVso">
+                                </iframe>
+                            </div>
+                        </a>
+                        <div class="flex flex-col flex-1 p-6">
+                            <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                            <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Flatcar From 3D to
+                                Game</a>
+                            <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Haikal Danung Trinanda - Ang.3
+                            </h3>
+                            <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                                <div
+                                    class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                    Blender
+                                </div>
+                                <div
+                                    class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                    Trainz: A New Era
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+    </section>
+
+    <!-- Game -->
+
+    <!-- Gallery -->
+    <section class="py-6 sm:py-12 dark:bg-coolGray-800  lg:py-24 bg-gray-900 text-yellow-400">
+        <div class="container p-6 mx-auto space-y-8">
+            <div class="space-y-2 text-center">
+                <h2 class="text-5xl font-bold font2 animate__fadeInDown animate__animated">GAMES</h2>
+                <p class="font-serif text-sm dark:text-coolGray-400 font1">a collection of works from
+                    Game Technology Students</p>
+            </div>
+            <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/PACBOY.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Pacboy</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Chalvin Elang K - Ang.1</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Unity Engine
+                            </div>
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                <a href="#" class="hover:underline">Link not available</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/GA.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline ">Ghost Adventure</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Atthiya Agustian - Ang.2</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Unity Engine
+                            </div>
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                <a href="#" class="hover:underline">Link not available</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/FH.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline">Finding Home</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Afta Dwi - Ang.2</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Construct 2
+                            </div>
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                <a href="#" class="hover:underline">Link not available</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex flex-col d">
+                    <a href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                        <img alt="" class="object-cover w-full h-52" src="img/porto/AK.webp">
+                    </a>
+                    <div class="flex flex-col flex-1 p-6">
+                        <a href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                        <a href="#" class="text-xs tracking-wider uppercase hover:underline">Alien & Key</a>
+                        <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Ahmad Shahal - Ang.2</h3>
+                        <div class="flex flex-wrap justify-start text-xs dark:text-coolGray-400">
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Construct 2
+                            </div>
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                Android Ver.
+                            </div>
+                            <div
+                                class=" border rounded-bl-lg bg-red-500 border-transparent text-white text-sm p-1 border-gray-900">
+                                <a href="https://drive.google.com/file/d/1-AA6MrW-BLrmHTSPwSmAWPulJwk2rzEO/view?usp=sharing"
+                                    class="hover:underline">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!---->
+            </div>
+    </section>
+
+    <footer class="bg-white " id="footer">
+        <div class="container px-6 py-4 mx-auto">
+            <div class="lg:flex">
+                <div class="w-full -mx-6 lg:w-2/5">
+                    <div class="px-6">
+                        <div>
+                            <a href="#" class="text-xl font-bold text-gray-900  font5">Game Technology</a><br>
+                            <a href="#" class="text-sm font-bold text-gray-900  font5">Politeknik Negeri Media kreatif</a>
+                        </div>
+                        
+                        <p class="max-w-md mt-2 text-gray-900 dark:text-gray-400">Jl. Srengseng Sawah Raya No.17, RT.8/RW.3, Srengseng Sawah, Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12630.</p>
+                        
+                        <div class="flex mt-4 -mx-2">
+                            <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Linkden">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                    <path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"/>
+                                </svg>
+                            </a>
+    
+                            <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Facebook">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                    <path d="M455.27,32H56.73A24.74,24.74,0,0,0,32,56.73V455.27A24.74,24.74,0,0,0,56.73,480H256V304H202.45V240H256V189c0-57.86,40.13-89.36,91.82-89.36,24.73,0,51.33,1.86,57.51,2.68v60.43H364.15c-28.12,0-33.48,13.3-33.48,32.9V240h67l-8.75,64H330.67V480h124.6A24.74,24.74,0,0,0,480,455.27V56.73A24.74,24.74,0,0,0,455.27,32Z"/>
+                                </svg>
+                            </a>
+    
+                            <a href="#" class="mx-2 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400" aria-label="Twitter">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 512 512">
+                                    <path d="M496,109.5a201.8,201.8,0,0,1-56.55,15.3,97.51,97.51,0,0,0,43.33-53.6,197.74,197.74,0,0,1-62.56,23.5A99.14,99.14,0,0,0,348.31,64c-54.42,0-98.46,43.4-98.46,96.9a93.21,93.21,0,0,0,2.54,22.1,280.7,280.7,0,0,1-203-101.3A95.69,95.69,0,0,0,36,130.4C36,164,53.53,193.7,80,211.1A97.5,97.5,0,0,1,35.22,199v1.2c0,47,34,86.1,79,95a100.76,100.76,0,0,1-25.94,3.4,94.38,94.38,0,0,1-18.51-1.8c12.51,38.5,48.92,66.5,92.05,67.3A199.59,199.59,0,0,1,39.5,405.6,203,203,0,0,1,16,404.2,278.68,278.68,0,0,0,166.74,448c181.36,0,280.44-147.7,280.44-275.8,0-4.2-.11-8.4-.31-12.5A198.48,198.48,0,0,0,496,109.5Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="mt-6 lg:mt-0 lg:flex-1">
+                    <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 text-gray-900">
+                        <div>
+                            <h3 class="uppercase ">Supported</h3>
+                            <a href="#" class="block mt-2 text-sm  hover:underline">Polimedia Jakarta</a>
+                            <a href="#" class="block mt-2 text-sm  hover:underline">MPM Polimedia JKT</a>
+                            <a href="#" class="block mt-2 text-sm  hover:underline">BEM Polimedia JKT</a>
+                            
+                        </div>
+    
+                        <div>
+                            <h3 class=" uppercase ">Media Partners</h3>
+                            <a href="#" class="block mt-2 text-sm  hover:underline">Sahabat HIMA Polimedia JKT</a>
+                            <a href="#" class="block mt-2 text-sm  hover:underline">Majalah Ketik</a>
+                            <a href="#" class="block mt-2 text-sm  hover:underline">Polimedia TV</a>
+                            <a href="#" class="block mt-2 text-sm  hover:underline">Radio Polimedia</a>
+                        </div>
+    
+                        <div>
+                            <h3 class=" uppercase ">Sponsorship</h3>
+                            <a href="#" class="block mt-2 text-sm  hover:underline"></a>
+                            <a href="#" class="block mt-2 text-sm  hover:underline"></a>
+                            <a href="#" class="block mt-2 text-sm  hover:underline"></a>
+                        </div>
+    
+                        <div>
+                            <h3 class=" uppercase dark:text-white">Contact</h3>
+                            <span class="block mt-2 text-sm  hover:underline"></span>
+                            <span class="block mt-2 text-sm  hover:underline"> gametechpolimedia@gmail.com </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
+    
+            <div>
+                <p class="text-center text-gray-900">© GTechtiv 2021 - All rights reserved - Designed by hkldtrinanda</p>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
